@@ -34,7 +34,7 @@ Glue the box togehter: one side, and the top is made out of 2 layers 2mm MDF, gl
 Solder all components to protoboard, soldering is prefered over using a breadboard since this works better/more reliable with the SPI communication of the RFID readers.
 Take the placement of the RFID readers into account, they should be placed directly under the cut out rounded rectangle in which the tokens will be placed. Best to attach them directly underneath the top plate for a more reliable reading. 
 ![alt text](https://github.com/A-Jansen/Mix-Match-ML-toolkit/blob/main/creationboard.jpg)
-Image made by: anonymized
+Image made by: Hannah van Iterson
   
 ### Code
 Depending on the microcontroller you are using, upload the ESP or Arduino version of the code. You can change the name of the board to a custom name. <br>
@@ -56,8 +56,8 @@ The tokens are made of two layers (4 mm and 2mm) mdf and 3mm synthetic felt with
 Assemble the tokens by glueing them together, with the 4mm MDF at the bottom next the 2mm MDF and as top layer the felt. 
 See the image for which shapes to combine. 
 ![alt text](https://github.com/A-Jansen/Mix-Match-ML-toolkit/blob/main/creationtokens.jpg)
-Image made by: anonymized
-  
+Image made by: Hannah van Iterson
+
 ### Writing ID numbers to your tags
 When creating your own version, you first need to initialize all the tokens by giving writing the correct ID numbers to them. The assigned numbers can be found [here](https://github.com/A-Jansen/Mix-Match-ML-toolkit/blob/main/Token%20id's.xlsx). To write he numbers you can use [this](https://github.com/miguelbalboa/rfid/tree/master/examples/rfid_write_personal_data) example code. 
 
