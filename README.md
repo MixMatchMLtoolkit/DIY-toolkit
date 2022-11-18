@@ -3,7 +3,7 @@ This github repository contains the relevant codes, schematics and files used to
 
 ![alt text](https://github.com/MixMatchMLtoolkit/DIY-toolkit/blob/main/system%20overview.jpg)
 ## Web interface 
-To visit the web interface click [here]https://mixmatchmltoolkit.github.io/) <br>
+To visit the web interface click [here](https://mixmatchmltoolkit.github.io/) <br>
 The web interface uses XML files to store all the information about all the tokens and combinations. XSLT and CSS is used to format this information and each time a token is placed or removed the site is updated using AJAX. This is done to keep the sensor board connected via BLE. 
 In order to find the sensing board, the serviceUUID should be the same in the BLEconnect.js file and the Arduino code uploaded to the microcontroller.
 
