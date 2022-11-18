@@ -1,0 +1,113 @@
+h1 {
+  font-family: Lato;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #2B5F6E;
+    margin-bottom: -10px;
+}
+
+
+
+h3 {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+h4{
+  /* text-align: center; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #2B5F6E;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+
+h5{
+  /* text-align: center; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #2B5F6E;
+  margin-top: -15px !important;
+  margin-bottom: 20px !important;
+}
+
+
+p,li {
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color:#3A3B3C
+}
+
+blockquote {
+  font-family: Lato;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+pre {
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+.centerText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-style:italic;
+  text-align: center;
+  color:#7DAED6;
+  /* margin-top: -20px; */
+  margin-bottom: -10px;
+  text-transform: lowercase;
+}
+
+
+.bold{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #1E475E;
+}
+
+.wrong{
+  color:red;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+a{
+  font-family: 'Lato', sans-serif;
+}
+
+#id:hover{
+  color:red;
+  text-decoration: none;
+}

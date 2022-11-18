@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xlink="http://www.w3.org/1999/xlink">
+  <labelimage>assets/photos/label.png</labelimage>
+  <labeledimage>assets/photos/ld.png</labeledimage>
+  <unlabeledimage>assets/photos/ud.png</unlabeledimage>
+  <datatoken>
+    <datatype>Image</datatype>
+    <dataname>Image</dataname>
+    <ltoken>98</ltoken>
+    <ultoken>104</ultoken>
+    <structure>Unstructured</structure>
+    <highlightLabeled>Image data can be photos, scans, photos of writing etc. The label tells you what is visible in the image or to what category it belongs.</highlightLabeled>
+    <highlightUnlabeled>Image data can be photos, scans, photos of writing etc.</highlightUnlabeled>
+    <descriptionLabeled>Images are unstructured forms of data. These could be photos of people, objects, the environment, medical scans, photos of writings, and more. Labeled image data can exist in two forms, one where the entire image belongs to one category (class) or where the different objects in an image are surrounded by a bounding box and each bounding box has a label to indicate to which category (class) it belongs.
+For good results, the photos should be taken with much variety, e.g. different backgrounds, lighting, and angles. Image data requires several steps of preprocessing, for example resizing to a smaller format.
+    </descriptionLabeled>
+    <descriptionUnlabeled>
+      Images are unstructured forms of data. These could be photos of people, objects, the environment, medical scans, photos of writings, and more.
+For good results, the photos should be taken with much variety, e.g. different backgrounds, lighting, and angles. Image data requires several steps of preprocessing, for example resizing to a smaller format.
+    </descriptionUnlabeled>
+    <format>.jpg, .png, .tiff</format>
+    <image>assets/photos/image.png</image>
+    <imageL>assets/photos/data_imageL.png</imageL>
+    <source>https://webkid.io/blog/datasets-for-machine-learning/</source>
+    <ulimage>assets/photos/data_imageUN.png</ulimage>
+    <ulsource>https://neurohive.io/en/datasets/tencent-dataset/</ulsource>
+    <collection>Camera</collection>
+  </datatoken>
+  <datatoken>
+    <datatype>Video</datatype>
+    <dataname>Video</dataname>
+    <ltoken>102</ltoken>
+    <ultoken>108</ultoken>
+    <structure>Unstructured</structure>
+    <highlightLabeled>Video data are a lot of frames (images) with audio. The label can be for the whole video or a single frame.</highlightLabeled>
+    <highlightUnlabeled>Video data are a lot of frames (images) with audio.</highlightUnlabeled>
+    <descriptionLabeled>Videos are unstructured forms of data that can be seen as time series of images with audio. This makes it sometimes possible to apply models for images on video data as well, as it will look at each frame as an individual image. Video data can be used at the frame level, e.g. predict the next frame or categorize the objects in a frame but it can also categorize the video as a whole, e.g. this is a sport or cooking video. In the case of the first, a label will need to be present for each frame and for the latter only for the video in its entirety. Video data often requires preprocessing.
+      </descriptionLabeled>
+    <descriptionUnlabeled>
+      Videos are unstructured forms of data that can be seen as time series of images with audio. This makes it sometimes possible to apply models for images on video data as well, as it will look at each frame as an individual image. Video data can be used at the frame level or as a whole. Video data often requires preprocessing.
+        </descriptionUnlabeled>
+    <format>.mp4, .mov, .avi, .mpeg</format>
+    <image>assets/photos/video.png</image>
+    <imageL>assets/photos/data_videoL.svg</imageL>
+    <source>https://kili-technology.com/annotation-tool/video-annotation-tool/</source>
+    <ulimage>assets/photos/data_videoUN.svg</ulimage>
+    <ulsource>https://medium.com/syncedreview/epic-kitchens-largest-egocentric-video-dataset-gets-new-baselines-5632ce9992bc</ulsource>
+    <collection>Video camera</collection>
+  </datatoken>
+  <datatoken>
+    <datatype>Text</datatype>
+    <dataname>Textual</dataname>
+    <ltoken>100</ltoken>
+    <ultoken>106</ultoken>
+    <structure>Unstructured</structure>
+    <highlightLabeled>Text data can range from individual words to whole books with the label indicating the category (they can also be embedded).</highlightLabeled>
+    <highlightUnlabeled>Text data can range from individual words to whole books.</highlightUnlabeled>
+    <descriptionLabeled>Text data are often unstructured data. Text data will often need to be preprocessed before being used in an ML model. For example, sentences will be split into words, stop words are removed and words are reduced to their root (e.g. words to word and writing to write). Labels can be present to indicate the category to which a text/ sentence/ word belongs, for example, if the sentence expresses a positive or negative sentiment. Other options for labeled data are the question to answer or even the next word in a sentence.
+     </descriptionLabeled>
+      <descriptionUnlabeled>
+        Text data are often unstructured data. Text data will often need to be preprocessed before being used in an ML model. For example, sentences will be split into words, stop words are removed and words are reduced to their root (e.g. words to word and writing to write). Based on these reduced texts, features are extracted that can be used in ML models (for example how often does this word occur or which words are used in the same contexts).
+      </descriptionUnlabeled>
+    <format>.doc, .pdf, .txt, .csv (with labels)</format>
+    <image>assets/photos/text.png</image>
+    <imageL>assets/photos/data_textL.svg</imageL>
+    <source>https://valohai.com/blog/production-machine-learning-pipeline-text-classification-fasttext/</source>
+    <ulimage>assets/photos/data_textUN.svg</ulimage>
+    <ulsource>Photo by Glen Carrie on Unsplash</ulsource>
+    <collection>Reviews, books, social media</collection>
+  </datatoken>
+  <datatoken>
+    <datatype>Audio</datatype>
+    <dataname>Audio</dataname>
+    <ltoken>97</ltoken>
+    <ultoken>103</ultoken>
+    <structure>Unstructured</structure>
+    <highlightLabeled>Audio data measures audio waves over time, e.g. music or voices. The label tells what is heard in the audio or to which category it belongs. </highlightLabeled>
+    <highlightUnlabeled>Audio data measures audio waves over time, e.g. music or voices.</highlightUnlabeled>
+    <descriptionLabeled>Audio data are unstructured data and are a special kind of time series data as they are audio waves (the amplitude) measured over time. Audio data can be voice recordings, music, animal sounds, sounds of machinery, and more. A label will be attached to each recording or segment to indicate to which category (class) it belongs. Audio data requires preprocessing and several methods exist, a well-known method is using Fourier Transform to get the frequencies.
+    </descriptionLabeled>
+    <descriptionUnlabeled>
+      Audio data are unstructured data and are a special kind of time series data as they are audio waves (the amplitude) measured over time. Audio data can be voice recordings, music, animal sounds, sounds of machinery, and more. Audio data requires preprocessing and several methods exist, a well-known method is using Fourier Transform to get the frequencies.
+    </descriptionUnlabeled>
+    <format>.mp3, .wav, .m4a</format>
+    <image>assets/photos/audio.png</image>
+    <imageL>assets/photos/data_audioL.svg</imageL>
+    <source>https://nl.mathworks.com/help/audio/ref/audiolabeler-app.html</source>
+    <ulimage>assets/photos/data_audioUN.svg</ulimage>
+    <ulsource>https://www.analyticsvidhya.com/blog/2017/08/audio-voice-processing-deep-learning/</ulsource>
+    <collection>Microphone</collection>
+  </datatoken>
+  <datatoken>
+    <datatype>Time series</datatype>
+    <dataname>Time series</dataname>
+    <ltoken>101</ltoken>
+    <ultoken>107</ultoken>
+    <structure>Unstructured</structure>
+    <highlightLabeled>Data inherently linked to time, recorded as a timeline or table where the label is in an extra column.</highlightLabeled>
+    <highlightUnlabeled>Data inherently linked to time, recorded as a timeline or table.</highlightUnlabeled>
+    <descriptionLabeled>Time series are unstructured data that contain repeated observations from e.g. a sensor or prices over time. Time series are often recorded in a tabular format where the time is saved in one column and the other columns contain other features such as the X, Y, Z acceleration from a sensor. If a label is available, these will be placed in an extra column. This label indicates the category (class) to which that data instance belongs.
+Time series are unstructured data since an extra step of preprocessing is often needed before it can be used as input for a machine learning model. Audio is a special subset of time series. Time series often need to be preprocessed, for example standardizing the data.
+  </descriptionLabeled>
+    <descriptionUnlabeled>
+      Time series are unstructured data that contain repeated observations from e.g. a sensor or prices over time. Time series are often recorded in a tabular format where the time is saved in one column and the other columns contain other features such as the X, Y, Z acceleration from a sensor. Time series are unstructured data since an extra step of preprocessing is often needed before it can be used as input for a machine learning model. Audio is a special subset of time series. Time series often need to be preprocessed, for example standardizing the data.
+    </descriptionUnlabeled>
+    <format>.csv, .tsd, .arff</format>
+    <image>assets/photos/timeseries.png</image>
+    <imageL>assets/photos/data_timeseriesL.svg</imageL>
+    <source>https://towardsdatascience.com/labelling-time-series-data-in-python-af62325e8f60</source>
+    <ulimage>assets/photos/data_timeseriesUL.svg</ulimage>
+    <ulsource>https://www.aptech.com/blog/introduction-to-the-fundamentals-of-time-series-data-and-analysis/</ulsource>
+    <collection>Accelerometer</collection>
+  </datatoken>
+  <datatoken>
+    <datatype>Table</datatype>
+    <dataname>Tabular</dataname>
+    <ltoken>99</ltoken>
+    <ultoken>105</ultoken>
+    <structure>Structured</structure>
+    <highlightLabeled>Data organized in a table with instances on rows and the features and label as columns.</highlightLabeled>
+    <highlightUnlabeled>Data organized in a table with instances on rows and features as columns.</highlightUnlabeled>
+    <descriptionLabeled>Tabular data is structured data and are organized in rows and columns, where each row (or column) represents one item. Labels are present as one column of the data and indicate to which category (class) that row of data belongs. The other columns are the features that are used to predict the label. For example, the label could be the rating of a movie and the features are the genre, the director, the release year, an overview of the movie, and its number of votes. Tabular data can be directly used in ML models.
+    </descriptionLabeled>
+      <descriptionUnlabeled>
+        Tabular data is structured data and are organized in rows and columns, where each row (or column) represents one item. In the case of unlabeled data, the columns contain only features that might be used e.g. to cluster based on similarity. Tabular data can be directly used in ML models.
+      </descriptionUnlabeled>
+    <format>.csv, .xls, .json</format>
+    <image>assets/photos/table.png</image>
+    <imageL>assets/photos/data_tableL.svg</imageL>
+    <source>https://bishwamittra.github.io/imli.html</source>
+    <ulimage>assets/photos/data_tableUL.svg</ulimage>
+    <ulsource>https://www.myonlinetraininghub.com/excel-tabular-data-format</ulsource>
+    <collection>Excel</collection>
+  </datatoken>
+  <!-- *********************************************************************** -->
+  <records>
+  <record index="1">
+    <dataset>RAVDESS emotional speech audio</dataset>
+    <datatype>Audio</datatype>
+    <description>Emotianl speech dataset</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio"></url>
+  </record>
+  <record index="2">
+    <dataset>Audio cats and dogs</dataset>
+    <datatype>Audio</datatype>
+    <description>Raw sounds from cats and dogs</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/mmoreaux/audio-cats-and-dogs"></url>
+  </record>
+  <record index="3">
+    <dataset>Hearbeat sounds</dataset>
+    <datatype>Audio</datatype>
+    <description>Classifying heartbeat anomalies from stethoscope audio</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/kinguistics/heartbeat-sounds"></url>
+  </record>
+  <record index="4">
+    <dataset>Audio MNIST</dataset>
+    <datatype>Audio</datatype>
+    <description>Audio samples of spoken digits (0-9) of 60 different speakers</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/sripaadsrinivasan/audio-mnist"></url>
+  </record>
+  <record index="5">
+    <dataset>GTZAN dataset</dataset>
+    <datatype>Audio</datatype>
+    <description>Music genre classification</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification"></url>
+  </record>
+  <record index="6">
+    <dataset>Respiratory Sound Database</dataset>
+    <datatype>Audio</datatype>
+    <description>Use audio recordings to detect respiratory diseases</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/vbookshelf/respiratory-sound-database"></url>
+  </record>
+  <record index="7">
+    <dataset>Birdsongs</dataset>
+    <datatype>Audio</datatype>
+    <description>Part of the resampled audio data for Cornell birdcall identificaton</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/ttahara/birdsong-resampled-train-audio-00"></url>
+  </record>
+  <record index="8">
+    <dataset>Video person-clustering dataset</dataset>
+    <datatype>Audio</datatype>
+    <description>A multi-modal TV-shows and movies dataset</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.robots.ox.ac.uk/~vgg/data/Video_Person_Clustering/"></url>
+  </record>
+  <record index="9">
+    <dataset>Hospital Ambient Noise Dataset</dataset>
+    <datatype>Audio</datatype>
+    <description>Hospital noise recorded in different locations of a hospital</description>
+    <labeled>no</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/koryakinp/d6-dice-videos"></url>
+  </record>
+  <record index="10">
+    <dataset>MINST</dataset>
+    <datatype>Image</datatype>
+    <description>Images of handwritten images</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://yann.lecun.com/exdb/mnist/"></url>
+  </record>
+  <record index="11">
+    <dataset>CIFAR-10/100</dataset>
+    <datatype>Image</datatype>
+    <description>Images of 10 classes</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://www.cs.toronto.edu/~kriz/cifar.html"></url>
+  </record>
+  <record index="12">
+    <dataset>ImageNet</dataset>
+    <datatype>Image</datatype>
+    <description>Image database organized according ot the WordNet hierarchy</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://image-net.org/"></url>
+  </record>
+  <record index="13">
+    <dataset>COCO</dataset>
+    <datatype>Image</datatype>
+    <description>Object detection, segmentation and captioning dataset</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://cocodataset.org/#home"></url>
+  </record>
+  <record index="14">
+    <dataset>Google-Landmarks-v2</dataset>
+    <datatype>Image</datatype>
+    <description>Images of landmarks across the world</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/xiuchengwang/python-dataset-download/data"></url>
+  </record>
+  <record index="15">
+    <dataset>xView</dataset>
+    <datatype>Image</datatype>
+    <description>Overhead images from complex scenes around the world, annotated using bounding boxes</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://xviewdataset.org/#dataset"></url>
+  </record>
+  <record index="16">
+    <dataset>Kinetics</dataset>
+    <datatype>Image</datatype>
+    <description>URL links of video clips which show human-object interactions and human-human interactions</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://deepmind.com/research/open-source/kinetics"></url>
+  </record>
+  <record index="17">
+    <dataset>Google's Open Images</dataset>
+    <datatype>Image</datatype>
+    <description>A vast dataset from Google AI containing over 10 million images</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://ai.googleblog.com/2016/09/introducing-open-images-dataset.html"></url>
+  </record>
+  <record index="18">
+    <dataset>Cityscapes  dataset</dataset>
+    <datatype>Image</datatype>
+    <description>Annotated video sequences taken in 50 different city streets</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.cityscapes-dataset.com/"></url>
+  </record>
+  <record index="19">
+    <dataset>IMBD-Wiki dataset</dataset>
+    <datatype>Image</datatype>
+    <description>Face images with labeled gender and age</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/"></url>
+  </record>
+  <record index="20">
+    <dataset>Stanford Dogs dataset</dataset>
+    <datatype>Image</datatype>
+    <description>Images of 120 different dog breed categories</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://vision.stanford.edu/aditya86/ImageNetDogs/"></url>
+  </record>
+  <record index="21">
+    <dataset>LaRa Traffic Light Recognition</dataset>
+    <datatype>Image</datatype>
+    <description>Images from traffic lights in Paris</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://www.lara.prd.fr/benchmarks/trafficlightsrecognition"></url>
+  </record>
+  <record index="22">
+    <dataset>WPI datasets</dataset>
+    <datatype>Image</datatype>
+    <description>Images from traffic lights, pedestrians and lane detection</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://computing.wpi.edu/dataset.html"></url>
+  </record>
+  <record index="23">
+    <dataset>MaskedFace-Net</dataset>
+    <datatype>Image</datatype>
+    <description>Human faces with correct and incorrectly worn masks</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://github.com/cabani/MaskedFace-Net"></url>
+  </record>
+  <record index="24">
+    <dataset>SVHN</dataset>
+    <datatype>Image</datatype>
+    <description>Street View House Numbers </description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://ufldl.stanford.edu/housenumbers/"></url>
+  </record>
+  <record index="25">
+    <dataset>Fashion MNIST</dataset>
+    <datatype>Image</datatype>
+    <description>Dataset of Zalando's article images</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://github.com/zalandoresearch/fashion-mnist"></url>
+  </record>
+  <record index="26">
+    <dataset>Surface crack detection</dataset>
+    <datatype>Image</datatype>
+    <description>Concrete surface sample images for Surface Crack Detection</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/arunrk7/surface-crack-detection "></url>
+  </record>
+  <record index="27">
+    <dataset>The Boston Housing Dataset</dataset>
+    <datatype>Tabular</datatype>
+    <description>This dataset contains information collected by the U.S Census Service concerning housing in the area of Boston Mass</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html"></url>
+  </record>
+  <record index="28">
+    <dataset>Mall customers</dataset>
+    <datatype>Tabular</datatype>
+    <description>Information about people visiting the mall in a particular city</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/shwetabh123/mall-customers"></url>
+  </record>
+  <record index="29">
+    <dataset>IRIS dataset</dataset>
+    <datatype>Tabular</datatype>
+    <description>Information about the flower petal and sepal width</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://archive.ics.uci.edu/ml/datasets/Iris"></url>
+  </record>
+  <record index="30">
+    <dataset>Wine Quality Dataset</dataset>
+    <datatype>Tabular</datatype>
+    <description>Chemical information about wines</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://archive.ics.uci.edu/ml/datasets/wine+quality"></url>
+  </record>
+  <record index="31">
+    <dataset>SOCR data</dataset>
+    <datatype>Tabular</datatype>
+    <description>Height and weight of 25000 different humans (18+)</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights"></url>
+  </record>
+  <record index="32">
+    <dataset>Titanic dataset</dataset>
+    <datatype>Tabular</datatype>
+    <description>Information about the passengers and whether they survived</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/problem12.html"></url>
+  </record>
+  <record index="33">
+    <dataset>Credit card fraud detection</dataset>
+    <datatype>Tabular</datatype>
+    <description>Anonymized credit card transactions labeled as fraudulent or genuine</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/mlg-ulb/creditcardfraud"></url>
+  </record>
+  <record index="34">
+    <dataset>Recommender systems dataset</dataset>
+    <datatype>Tabular</datatype>
+    <description>Various datsets from popular websites like Goodreads book reviews, Amazon product reviews, bartending data, data from social media, and others</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://cseweb.ucsd.edu/~jmcauley/datasets.html"></url>
+  </record>
+  <record index="35">
+    <dataset>Comma.ai</dataset>
+    <datatype>Tabular</datatype>
+    <description>Details such as a car's speed, acceleration, steering angle, and GPS coordinates</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://archive.org/details/comma-dataset"></url>
+  </record>
+  <record index="36">
+    <dataset>MIMIC-III</dataset>
+    <datatype>Tabular</datatype>
+    <description>De-identified health data associated with ~40,000 critical care patients. It includes demographics, vital signs, laboratory tests, medications, and more.</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://physionet.org/content/mimiciii/1.4/"></url>
+  </record>
+  <record index="37">
+    <dataset>Credit card fraud detection</dataset>
+    <datatype>Tabular</datatype>
+    <description>Anonymized credit card transactions labeled as fraudulent or genuine</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/mlg-ulb/creditcardfraud"></url>
+  </record>
+  <record index="38">
+    <dataset>Music genre classification</dataset>
+    <datatype>Tabular</datatype>
+    <description>Characteristics of music with their genre</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/purumalgi/music-genre-classification"></url>
+  </record>
+  <record index="39">
+    <dataset>Star Dataset</dataset>
+    <datatype>Tabular</datatype>
+    <description>Stellar Classification uses the spectral data of stars to categorize them into different categories. </description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/vinesmsuic/star-categorization-giants-and-dwarfs"></url>
+  </record>
+  <record index="40">
+    <dataset>MovieLens</dataset>
+    <datatype>Tabular</datatype>
+    <description>Rating data sets from the MovieLens website</description>
+    <labeled>no</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://grouplens.org/datasets/movielens/"></url>
+  </record>
+  <record index="41">
+    <dataset>Jester</dataset>
+    <datatype>Tabular</datatype>
+    <description>Continuous ratings of jokes</description>
+    <labeled>no</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://www.ieor.berkeley.edu/~goldberg/jester-data/"></url>
+  </record>
+  <record index="42">
+    <dataset>Lexicoder sentiment dictionary</dataset>
+    <datatype>Textual</datatype>
+    <description>Dictionary with &quot;negative&quot; sentiment words and &quot;postive&quot; sentiment words</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://www.lexicoder.com/"></url>
+  </record>
+  <record index="43">
+    <dataset>IMDB reviews</dataset>
+    <datatype>Textual</datatype>
+    <description>Movie reviews</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews"></url>
+  </record>
+  <record index="44">
+    <dataset>Stanford Sentiment Treebank</dataset>
+    <datatype>Textual</datatype>
+    <description>Standard sentiment dataset with sentiment annotations.</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://nlp.stanford.edu/sentiment/code.html"></url>
+  </record>
+  <record index="45">
+    <dataset>Twitter US Airline sentiment</dataset>
+    <datatype>Textual</datatype>
+    <description>Twitter data on US airlines from February 2015, classified as positive, negative, and neutral tweets</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/crowdflower/twitter-airline-sentiment"></url>
+  </record>
+  <record index="46">
+    <dataset>HotspotQA dataset</dataset>
+    <datatype>Textual</datatype>
+    <description>A question answering dataset featuring natural, multi-hop questions, with strong supervision for supporting facts to enable more explainable question answering system</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://hotpotqa.github.io/"></url>
+  </record>
+  <record index="47">
+    <dataset>Amazon reviews</dataset>
+    <datatype>Textual</datatype>
+    <description>Amazon reviews</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://snap.stanford.edu/data/web-Amazon.html"></url>
+  </record>
+  <record index="48">
+    <dataset>Rotten Tomatoes reviews</dataset>
+    <datatype>Textual</datatype>
+    <description>Archive of critic reviews</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://drive.google.com/file/d/1w1TsJB-gmIkZ28d1j7sf1sqcPmHXw352/view"></url>
+  </record>
+  <record index="49">
+    <dataset>SMS Spam Collection in English</dataset>
+    <datatype>Textual</datatype>
+    <description>English SMS spam message</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/"></url>
+  </record>
+  <record index="50">
+    <dataset>UCI spambase dataset</dataset>
+    <datatype>Textual</datatype>
+    <description>Datset with emails and meta-information about the emails</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://archive.ics.uci.edu/ml/datasets/Spambase"></url>
+  </record>
+  <record index="51">
+    <dataset>The Big Bad NLP Database</dataset>
+    <datatype>Textual</datatype>
+    <description>Datasets for various natural language processing tasks</description>
+    <labeled>no</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://index.quantumstat.com/"></url>
+  </record>
+  <record index="52">
+    <dataset>Enron Email dataset</dataset>
+    <datatype>Textual</datatype>
+    <description>Emails from 150 users</description>
+    <labeled>no</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.cs.cmu.edu/~enron/"></url>
+  </record>
+  <record index="53">
+    <dataset>Human Acitivity Recognition</dataset>
+    <datatype>Time series</datatype>
+    <description>Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones"></url>
+  </record>
+  <record index="54">
+    <dataset>Daily Climate time series data</dataset>
+    <datatype>Time series</datatype>
+    <description>Daily climate data in the city of Delhi from 2013 to 2017</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/sumanthvrao/daily-climate-time-series-data"></url>
+  </record>
+  <record index="55">
+    <dataset>DJIA 30 Stock Time Series</dataset>
+    <datatype>Time series</datatype>
+    <description>Historical stock data for DIJA 30 companies (2006-01-01 to 2018-01-01)</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/szrlee/stock-time-series-20050101-to-20171231"></url>
+  </record>
+  <record index="56">
+    <dataset>House Property Sales Time Series</dataset>
+    <datatype>Time series</datatype>
+    <description>What model will produce the most accurate forecast?</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/htagholdings/property-sales"></url>
+  </record>
+  <record index="57">
+    <dataset>MotionSense dataset</dataset>
+    <datatype>Time series</datatype>
+    <description>Time-series data generated by accelerometer and gyroschope sesors</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://github.com/mmalekzadeh/motion-sense"></url>
+  </record>
+  <record index="58">
+    <dataset>Sports-1M Dataset</dataset>
+    <datatype>Video</datatype>
+    <description>1,133,158 YouTube videos annotated with 487 sports labels</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://cs.stanford.edu/people/karpathy/deepvideo/"></url>
+  </record>
+  <record index="59">
+    <dataset>YouTube-8M Segments</dataset>
+    <datatype>Video</datatype>
+    <description>Human-verified labels for video segments</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://research.google.com/youtube8m/"></url>
+  </record>
+  <record index="60">
+    <dataset>Objectron</dataset>
+    <datatype>Video</datatype>
+    <description>Short o object-centric video clips capturing objects from different angles, each of which is accompanied by AR session metadata that includes camera poses, sparse point-clouds, surface planes and 3D bounding boxes</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://research.google/tools/datasets/objectron/"></url>
+  </record>
+  <record index="61">
+    <dataset>Evoked expressions from Videos</dataset>
+    <datatype>Video</datatype>
+    <description>Videos annotated with 15 continuous evoked expression labels, corresponding to the facial experssion of viewers</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://research.google/tools/datasets/eev/"></url>
+  </record>
+  <record index="62">
+    <dataset>YouTube faces database</dataset>
+    <datatype>Video</datatype>
+    <description>Videos of faces that can be used for face recognition</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.cs.tau.ac.il/~wolf/ytfaces/"></url>
+  </record>
+  <record index="63">
+    <dataset>Highway Traffic Videos Dataset</dataset>
+    <datatype>Video</datatype>
+    <description>Videos from a stationary camera overlooking I-5 in Seattle, WA and the video is labelled as light, medium and heavy traffic</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/aryashah2k/highway-traffic-videos-dataset"></url>
+  </record>
+  <record index="64">
+    <dataset>Video person-clustering dataset</dataset>
+    <datatype>Video</datatype>
+    <description>A multi-modal TV-shows and movies dataset</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.robots.ox.ac.uk/~vgg/data/Video_Person_Clustering/"></url>
+  </record>
+  <record index="65">
+    <dataset>Bike Video dataset</dataset>
+    <datatype>Video</datatype>
+    <description>Videos recorded by a hand-held phone camera while riding a cmera</description>
+    <labeled>no</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://research.google/tools/datasets/bike-video/"></url>
+  </record>
+  <record index="66">
+    <dataset>D6 Dice-videos</dataset>
+    <datatype>Video</datatype>
+    <description>Videos of 5-7 dices with the same camera, angle and orientation</description>
+    <labeled>no</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/koryakinp/d6-dice-videos"></url>
+  </record>
+  <record index="67">
+    <dataset>WordSimilarity-353</dataset>
+    <datatype>Textual</datatype>
+    <description>English word pairs along with human-assigned similarity judgements</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://aclweb.org/aclwiki/WordSimilarity-353_Test_Collection_(State_of_the_art)"></url>
+  </record>
+  <record index="68">
+    <dataset>SimLex-999</dataset>
+    <datatype>Textual</datatype>
+    <description>SimLex-999 provides a way of measuring how well models capture similarity between words</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://fh295.github.io/simlex.html"></url>
+  </record>
+  <record index="69">
+    <dataset>VCTK</dataset>
+    <datatype>Audio</datatype>
+    <description>Voice cloning tool kit with native English speakers</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://datashare.ed.ac.uk/handle/10283/2950"></url>
+  </record>
+  <record index="70">
+    <dataset>LibriTTS</dataset>
+    <datatype>Audio</datatype>
+    <description>LibriTTS is a multi-speaker English corpus of approximately 585 hours of read English speech at 24kHz sampling rate</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://research.google/tools/datasets/libri-tts/"></url>
+  </record>
+  <record index="71">
+    <dataset>Wikidata</dataset>
+    <datatype>Textual</datatype>
+    <description>Wikidata acts as central storage for the structured data of its Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others.</description>
+    <labeled>no</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://www.wikidata.org/wiki/Wikidata:Main_Page"></url>
+  </record>
+  <record index="72">
+    <dataset>SEMPRE 2.4</dataset>
+    <datatype>Textual</datatype>
+    <description>Dataset on how to map natural language utterances into an intermediate logical form</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://github.com/percyliang/sempre"></url>
+  </record>
+  <record index="73">
+    <dataset>CNN/Daily Mail</dataset>
+    <datatype>Textual</datatype>
+    <description>Dataset for text summarization</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://paperswithcode.com/dataset/cnn-daily-mail-1"></url>
+  </record>
+  <record index="74">
+    <dataset>Children's Book Test (CBT)</dataset>
+    <datatype>Textual</datatype>
+    <description>QA pairs within the context of children's book</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://huggingface.co/datasets/cbt"></url>
+  </record>
+  <record index="75">
+    <dataset>SQuAD</dataset>
+    <datatype>Textual</datatype>
+    <description>QA pairs with 500 Wikipedia articles for context</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://rajpurkar.github.io/SQuAD-explorer/"></url>
+  </record>
+  <record index="76">
+    <dataset>TREC</dataset>
+    <datatype>Textual</datatype>
+    <description>QA collection for returning an actual answer</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://trec.nist.gov/data/qa.html"></url>
+  </record>
+  <record index="77">
+    <dataset>VisualQA</dataset>
+    <datatype>Image</datatype>
+    <description>VQA is a  dataset containing open-ended questions about images</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="https://visualqa.org/"></url>
+  </record>
+  <record index="78">
+    <dataset>Toronto COCO-QA dataset</dataset>
+    <datatype>Image</datatype>
+    <description>Visual question answering (for the type of questions object, number, color and location)</description>
+    <labeled>yes</labeled>
+    <url xlink:type="simple" xlink:show="new" xlink:href="http://www.cs.toronto.edu/~mren/research/imageqa/data/cocoqa/"></url>
+  </record>
+</records>
+</data>

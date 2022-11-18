@@ -1,0 +1,118 @@
+.compare {
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: auto;
+  width: 1200px;
+  height: inherit;
+  padding-bottom: 30px;
+  overflow: auto;
+  display:flex;
+  flex-direction: row;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.leftCompareData{
+  /* float: left; */
+  flex: 40%;
+  /* margin: auto; */
+}
+
+.rightCompareData{
+  /* float: right; */
+  flex: 40%;
+  /* margin:auto; */
+}
+
+.leftCompare{
+  /* float: left; */
+  width: 48%;
+
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.rightCompare{
+  /* float: right; */
+  width: 48%;
+
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+
+.illustrationCompare{
+  max-height: 200px;
+  max-width: 75%;
+
+}
+
+#fullspanCompareRight{
+    display: none;
+}
+
+#fullspanCompareLeft{
+  display: none;
+}
+
+#examplesLeft{
+  display: block;
+}
+
+#examplesRight{
+  display: block;
+}
+
+#descHiddenLeft{
+  display: none;
+}
+#descHiddenRight{
+  display: none;
+}
+
+.click{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.descriptionAbilityCompare{
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+#imageL{
+  height: 170px;
+  /* overflow: auto; */
+  display: inline-block;
+}
+
+#imageR{
+  height: 170px;
+  /* overflow: visible; */
+  display: inline-block;
+}
+
+.typeC{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  margin-top: 15px;
+
+}
+
+.descriptionC{
+  font-size: 16px;
+  width: 80%;
+  /* min-height: 180px; */
+}
+
+.illustrationAbilityC{
+  visibility: visible;
+  /* transform: translate(-5%, -20%); */
+  max-width: 450px;
+  max-height: 170px;
+  /* float: right; */
+  /* display: block; */
+  margin-bottom: -0px;
+
+}

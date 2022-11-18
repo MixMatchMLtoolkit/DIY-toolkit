@@ -1,0 +1,225 @@
+<?php Header("Cache-Control: max-age=300, must-revalidate"); ?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Mix & Match ML toolkit</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+	<script src="https://unpkg.com/p5ble@0.0.4/dist/p5.ble.js"></script>
+
+	<!--<script src="sketch.js"></script>-->
+	<script type="text/javascript" src="libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="libraries/oocsi-web.js"></script>
+	<script type="text/javascript" scr="script.js"></script>
+	<link href="/assets/css/fonts.css" type="text/css" rel="stylesheet">
+	<link href="/assets/css/homepage.css" type="text/css" rel="stylesheet">
+
+
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+
+
+</head>
+<!-- Code for dropdown from: https://www.w3jar.com/how-to-create-multi-level-dropdown-menu-with-pure-css/ -->
+
+<div class='header'>
+
+	<div class='modediv'>
+
+		<label class="switch">
+			<input type="checkbox" id='switchMode' onChange="changeMode()">
+			<span class="slider round"></span>
+		</label>
+		<p class='mode'>Education mode</p>
+
+	</div>
+	<div class='menudiv'>
+		<ul class="dropdown">
+			<li><i class="fas fa-bars fa-2x" href="#" style="color: #2B5F6E;"></i>
+				<ul>
+					<li><a href="#">Data</a>
+						<ul>
+							<li><a href="#">Labeled data</a>
+								<ul>
+									<li><a href=# value=99 onclick="openDatabyClick(99)">Table</a></li>
+									<li><a href=# value=101 onclick="openDatabyClick(101)">Time series</a></li>
+									<li><a href=# onclick="openDatabyClick(98)">Image</a></li>
+									<li><a href=# value='100' onClick="openDatabyClick(100)">Text</a></li>
+									<li><a href=# value=97 onclick="openDatabyClick(97)">Audio</a></li>
+									<li><a href=# value=102 onclick="openDatabyClick(102)">Video</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Unlabeled data</a>
+								<ul>
+									<li><a href=# value=105 onclick="openDatabyClick(105)">Table</a></li>
+									<li><a href=# value=10 onclick="openDatabyClick(107)">Time series</a></li>
+									<li><a href=# onclick="openDatabyClick(104)">Image</a></li>
+									<li><a href=# value='106' onClick="openDatabyClick(106)">Text</a></li>
+									<li><a href=# value=103 onclick="openDatabyClick(103)">Audio</a></li>
+									<li><a href=# value=108 onclick="openDatabyClick(108)">Video</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Abilities</a>
+						<ul>
+							<li><a href="#">Supervised learning</a>
+								<ul>
+									<li><a href=# onclick="openAbilitybyClick(109)">Categorize</a></li>
+									<li><a href=# onclick="openAbilitybyClick(110)">Foresee</a></li>
+									<li><a href=# onclick="openAbilitybyClick(111)">Identify</a></li>
+									<li><a href=# onclick="openAbilitybyClick(113)">Communicate</a></li>
+									<li><a href=# onclick="openAbilitybyClick(117)">Translate</a></li>
+									<li><a href=# onclick="openAbilitybyClick(122)">Understand</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Unsupervised learning</a>
+								<ul>
+									<li><a href=# onclick="openAbilitybyClick(112)">Cluster</a></li>
+									<li><a href=# onclick="openAbilitybyClick(114)">Distinguish</a></li>
+									<li><a href=# onclick="openAbilitybyClick(116)">Recommend</a></li>
+									<li><a href=# onclick="openAbilitybyClick(115)">Generate</a></li>
+
+								</ul>
+							</li>
+							<li><a href="#">Reinforcement learning</a>
+								<ul>
+									<li><a href=# onclick="openAbilitybyClick(120)">Optimize</a></li>
+									<li><a href=# onclick="openAbilitybyClick(66)">Navigate</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Combinations</a>
+						<ul>
+							<li><a href=# value=99 onclick="openDatabyClick(99)">Table</a>
+								<ul>
+									<li><a href=# onclick="openCombibyClick(99, 109)">Categorize</a></li>
+									<li><a href=# onclick="openCombibyClick(99, 110)">Foresee</a></li>
+									<li><a href=# onclick="openCombibyClick(99, 111)">Identify</a></li>
+									<li><a href=# onclick="openCombibyClick(99, 113)" class='nocombi'>Communicate</a></li>
+									<li><a href=# onclick="openCombibyClick(99, 117)" class='nocombi'>Translate</a></li>
+									<li><a href=# onclick="openCombibyClick(99, 122)" class='nocombi'>Understand</a></li>
+									<li><a href=# onclick="openCombibyClick(105, 112)">Cluster</a></li>
+									<li><a href=# onclick="openCombibyClick(105, 114)">Distinguish</a></li>
+									<li><a href=# onclick="openCombibyClick(105, 116)">Recommend</a></li>
+									<li><a href=# onclick="openCombibyClick(105, 115)">Generate</a></li>
+
+								</ul>
+							</li>
+							<li><a href=# value=101 onclick="openDatabyClick(101)">Time series</a>
+								<ul>
+									<li><a href=# onclick="openCombibyClick(101, 109)">Categorize</a></li>
+									<li><a href=# onclick="openCombibyClick(101, 110)">Foresee</a></li>
+									<li><a href=# onclick="openCombibyClick(101, 111)">Identify</a></li>
+									<li><a href=# onclick="openCombibyClick(101, 113)" class='nocombi'>Communicate</a></li>
+									<li><a href=# onclick="openCombibyClick(101, 117)" class='nocombi'>Translate</a></li>
+									<li><a href=# onclick="openCombibyClick(101, 122)">Understand</a></li>
+									<li><a href=# onclick="openCombibyClick(107, 112)">Cluster</a></li>
+									<li><a href=# onclick="openCombibyClick(107, 114)">Distinguish</a></li>
+									<li><a href=# onclick="openCombibyClick(107, 116)">Recommend</a></li>
+									<li><a href=# onclick="openCombibyClick(107, 115)">Generate</a></li>
+								</ul>
+							</li>
+							<li><a href=#>Image</a>
+								<ul>
+									<li><a href=# onclick="openCombibyClick(98, 109)">Categorize</a></li>
+									<li><a href=# onclick="openCombibyClick(98, 110)">Foresee</a></li>
+									<li><a href=# onclick="openCombibyClick(98, 111)">Identify</a></li>
+									<li><a href=# onclick="openCombibyClick(98, 113)">Communicate</a></li>
+									<li><a href=# onclick="openCombibyClick(98, 117)">Translate</a></li>
+									<li><a href=# onclick="openCombibyClick(98, 122)">Understand</a></li>
+									<li><a href=# onclick="openCombibyClick(104, 112)">Cluster</a></li>
+									<li><a href=# onclick="openCombibyClick(104, 114)">Distinguish</a></li>
+									<li><a href=# onclick="openCombibyClick(104, 116)">Recommend</a></li>
+									<li><a href=# onclick="openCombibyClick(104, 115)">Generate</a></li>
+								</ul>
+							</li>
+							<li><a href=# value='100' onClick="openDatabyClick(100)">Text</a>
+								<ul>
+									<li><a href=# onclick="openCombibyClick(100, 109)">Categorize</a></li>
+									<li><a href=# onclick="openCombibyClick(100, 110)">Foresee</a></li>
+									<li><a href=# onclick="openCombibyClick(100, 111)">Identify</a></li>
+									<li><a href=# onclick="openCombibyClick(100, 113)">Communicate</a></li>
+									<li><a href=# onclick="openCombibyClick(100, 117)">Translate</a></li>
+									<li><a href=# onclick="openCombibyClick(100, 122)">Understand</a></li>
+									<li><a href=# onclick="openCombibyClick(106, 112)">Cluster</a></li>
+									<li><a href=# onclick="openCombibyClick(106, 114)">Distinguish</a></li>
+									<li><a href=# onclick="openCombibyClick(106, 116)">Recommend</a></li>
+									<li><a href=# onclick="openCombibyClick(106, 115)">Generate</a></li>
+								</ul>
+							</li>
+							<li><a href=# value=97 onclick="openDatabyClick(97)">Audio</a>
+								<ul>
+									<li><a href=# onclick="openCombibyClick(97, 109)">Categorize</a></li>
+									<li><a href=# onclick="openCombibyClick(97, 110)" class='nocombi'>Foresee</a></li>
+									<li><a href=# onclick="openCombibyClick(97, 111)">Identify</a></li>
+									<li><a href=# onclick="openCombibyClick(97, 113)">Communicate</a></li>
+									<li><a href=# onclick="openCombibyClick(97, 117)">Translate</a></li>
+									<li><a href=# onclick="openCombibyClick(97, 122)">Understand</a></li>
+									<li><a href=# onclick="openCombibyClick(103, 112)">Cluster</a></li>
+									<li><a href=# onclick="openCombibyClick(103, 114)">Distinguish</a></li>
+									<li><a href=# onclick="openCombibyClick(103, 116)">Recommend</a></li>
+									<li><a href=# onclick="openCombibyClick(103, 115)">Generate</a></li>
+								</ul>
+							</li>
+							<li><a href=# value=102 onclick="openDatabyClick(102)">Video</a>
+								<ul>
+									<li><a href=# onclick="openCombibyClick(102, 109)">Categorize</a></li>
+									<li><a href=# onclick="openCombibyClick(102, 110)">Foresee</a></li>
+									<li><a href=# onclick="openCombibyClick(102, 111)">Identify</a></li>
+									<li><a href=# onclick="openCombibyClick(102, 113)" class='nocombi'>Communicate</a></li>
+									<li><a href=# onclick="openCombibyClick(102, 117)">Translate</a></li>
+									<li><a href=# onclick="openCombibyClick(102, 122)">Understand</a></li>
+									<li><a href=# onclick="openCombibyClick(108, 112)">Cluster</a></li>
+									<li><a href=# onclick="openCombibyClick(108, 114)">Distinguish</a></li>
+									<li><a href=# onclick="openCombibyClick(108, 116)">Recommend</a></li>
+									<li><a href=# onclick="openCombibyClick(108, 115)">Generate</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+<body class="replace">
+
+	<div class=centercenterText>
+		<h2>How do you want to use the toolkit?</h2>
+		<p><i>You can always switch this later with the toggle in the top right</i></p>
+		<div class='modeBox'>
+			<a href="#" class='buttona' onClick='openInfo(); selectMode("education")'>
+				<div class="button">
+					<i class='fas fa-graduation-cap' style='font-size:34px'></i>
+					<h3 class='buttonTextBig'>Educational mode</h3>
+					<p>Select this mode if you are new to machine learning and either want to use the toolkit for learning or when you want to see all explanations during use</p>
+				</div>
+			</a>
+
+			<a href="#" class='buttona' onClick='openInfo(); selectMode("brainstorm") '>
+				<div class="button">
+					<i class='fas fa-note-sticky' style='font-size:34px'></i>
+					<h3 class='buttonTextBig'>Minimal mode</h3>
+					<p>Select this mode if you are using the toolkit to quickly brainstorm ideas and/or just want the short version of the explanations for example during a collaboration </p>
+				</div>
+			</a>
+		</div>
+	</div>
+
+</body>
+
+
+
+</html>
