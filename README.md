@@ -34,6 +34,7 @@ The necessary code and files for making the sensing board can be found in the fo
 Glue the box togehter: one side, and the top is made out of 2 layers 2mm MDF, glue these first together. Next attach the sides to the bottom, do not attach the the top so you can still access the electronics.
 Solder all components to protoboard, soldering is prefered over using a breadboard since this works better/more reliable with the SPI communication of the RFID readers.
 Take the placement of the RFID readers into account, they should be placed directly under the cut out rounded rectangle in which the tokens will be placed. Best to attach them directly underneath the top plate for a more reliable reading. 
+
 ![alt text](https://github.com/MixMatchMLtoolkit/DIY-toolkit/blob/main/creationboard.jpg)
 Image made by: Hannah van Iterson
   
