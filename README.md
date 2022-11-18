@@ -15,12 +15,13 @@ The necessary code and files for making the sensing board can be found in the fo
 
 ### Materials
 <ul>
-  <li>4 mm MDF or another firm material suited for lasercutting</li>
-  <li>2 mm MDF or another firm material suited for lasercutting</li>
+  <li>4 mm MDF or another hard material suited for lasercutting</li>
+  <li>2 mm MDF or another hard material suited for lasercutting</li>
   <li>Mircontroller<li>
     <ul>
       <li>LilyGO TTGO T-Energy ESP32-WROVER</li>
       <li>Arduino Nano 33 IoT</li>
+      <li>ESP 32</li>
       <li>Or any other microntroller with BLE and SPI (not tested)</li>
       </ul>
   <li>18650  battery/ powerbank/ any other powersource</li>
@@ -61,3 +62,4 @@ Image made by: Hannah van Iterson
 ### Writing ID numbers to your tags
 When creating your own version, you first need to initialize all the tokens by giving writing the correct ID numbers to them. The assigned numbers can be found [here](https://github.com/MixMatchMLtoolkit/DIY-toolkit/blob/main/Token%20id's.xlsx). To write he numbers you can use [this](https://github.com/miguelbalboa/rfid/tree/master/examples/rfid_write_personal_data) example code. 
 
+### Licencse
