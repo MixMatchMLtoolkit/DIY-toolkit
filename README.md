@@ -7,6 +7,7 @@ To visit the web interface click [here](https://mixmatchmltoolkit.github.io/) <b
 The web interface uses XML files to store all the information about all the tokens and combinations. XSLT and CSS is used to format this information and each time a token is placed or removed the site is updated using AJAX. This is done to keep the sensor board connected via BLE. 
 In order to find the sensing board, the serviceUUID should be the same in the BLEconnect.js file and the Arduino code uploaded to the microcontroller.
 
+If you want to make changes to the web interface, you can fork the repository and make changes and either run it localy or host it yourself. 
 
 ## Sensing board
 The sensing board contains two RFID readers to read the tokens. Custom versions of the sensing board can be used, here two options will be shown: (i) using an ESP32-wrover with build in battery holder and (ii) using an Arduino Nano 33 IoT (or ESP32) with powerbank.
