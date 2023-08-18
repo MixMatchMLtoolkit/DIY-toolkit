@@ -26,7 +26,7 @@ The necessary code and files for making the sensing board can be found in the fo
       <li>Or any other microntroller with BLE and SPI (not tested)</li>
       </ul>
   <li>18650  battery/ powerbank/ any other powersource</li>
-  <li>2x MFRC522 RFID readers</li>
+  <li>2x MFRC522 RFID readers (not yet tested but the RFID PN532 might be better as it has a larger reading range, let me know if you have tested it)</li>
   <li>On-off switch</li>
   <li>Optional: extension cable from male micro usb to female mirco usb</li>
 </ul>
