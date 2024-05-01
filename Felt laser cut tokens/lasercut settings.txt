@@ -1,3 +1,5 @@
+Settings for lasercutting synthetic 3mm felt:
+
 Engrave (black): 40 100 1000 
 Vector engrave (red): 2 0.9 1000 
 Cutting (blue): 11 0.6 5000
